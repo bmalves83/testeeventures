@@ -1,0 +1,395 @@
+@media(max-width: 1440px){
+    html{
+        body{
+            section{
+                &.header-padrao{
+                    height: 440px;
+                }
+            }
+        }
+    }
+}
+
+// Para colunas da classe lg
+@media(max-width:1199px) {
+    html{
+        body{
+            header{
+                .navbar-brand{
+                    width: 250px;
+                }
+            }
+            section{
+                &.slides{
+                    height: auto;
+                    max-height: 550px;
+                }
+                &.header-padrao {
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px){
+    #menu-secundario{
+        li.dropdown:hover>.dropdown-menu{
+            display:block;
+        }
+    }
+}
+
+// Para colunas da classe md
+@media(max-width: 991px) {
+    html {
+        body {
+            h1 {
+                font-size: 1.813em!important;
+            }
+    
+            h2 {
+                font-size: 1.625em!important;
+            }
+    
+            h3 {
+                font-size: 1.438em!important;
+            }
+    
+            h4 {
+                font-size: 1.250em!important;
+            }
+    
+            h5 {
+                font-size: 1.063em!important;
+            }
+    
+            h6 {
+                font-size: 1em!important;
+            }
+            header{
+                .navbar{
+                    button.navbar-toggler{
+                        margin-left: auto;
+                    }
+                    #menu-secundario{
+                        ul{
+                            li{
+                                .dropdown-menu{
+                                    &:before{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            section {
+                &.slides {
+                    height: 370px;
+                }
+                // Header
+                &.header-padrao {
+                    height: 250px;
+                    .container {
+                        p.w-50 {
+                            width: 100% !important;
+                        }
+                    }
+                }
+
+                // Index - Serviços
+                &.rema-servicos, 
+                &.rema-presenca-mundial,
+                &.rema-perfil,
+                &.rema-solucoes,
+                &.rema-novidades,
+                &.rema-diferencial,
+                &.rema-parceiros{    
+                    h2 {
+                        line-height: 30px;
+                    }
+                }
+
+                // Index - presença mundial
+                &.rema-presenca-mundial{
+                    padding: 100px 0;
+                }
+                // Index - empresa
+                &.rema-perfil{
+                    iframe{
+                        height:415px;
+                    }
+                    .clip1{
+                        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    }
+                }
+                // Index - Soluções
+                &.rema-solucoes{
+                    .clip2{
+                        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    }
+                }
+                // Index - Blog (Novidades)
+                &.rema-novidades{
+                    .blog-post{
+                        height: 380px;
+                        .btn-rema {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                // Blog
+                &.blog-rema {
+                    .form-blog {
+                        .form-group {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                // Single Page
+                &.single-page-rema{
+                    h1, h2{
+                        line-height: 20px;
+                    }
+                }
+
+                // Produtos
+                &.produtos-rema{
+                    .my-130{
+                        margin: 50px 0;
+                    }
+                }
+
+                // Contato - Página
+                &.rema-contato {
+                    .info-contato {
+                        margin-left: 30px;
+
+                        .contato-lista {
+                            li {
+                                font-size: .8em;
+                            }
+                        }
+                    }
+
+                    .form-contato {
+                        padding-left: 70px;
+                        z-index: 0;
+                        margin-left: -60px;
+                    }
+                }
+            }
+
+            footer {
+
+                .col-md-6:nth-of-type(3),
+                .col-md-6:nth-of-type(4) {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+
+// Para colunas da classe sm
+@media(max-width:767.98px) {
+    html {
+        body {
+            section {
+                &.header-padrao {
+                    height: 350px;
+                }
+                // Index - Blog (Novidades)
+                &.rema-novidades{
+                    .blog-post{
+                        height: 500px;
+                        .btn-rema {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                &.blog-rema {
+                    .post-blog {
+                        height: auto;
+
+                        h2 {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                // Soluções Rema
+                &.solucoes-rema{
+                    .solucao-container{
+                        display: flex;
+                        justify-content: center;
+
+                        .flip-card{
+                            max-width: 70%;
+                            min-height: 350px;
+                            .flipper{
+                                img{
+                                    width: 60px;
+                                    height: 60px;
+                                }
+                                h2{ font-size: 1.2em!important;}
+                            }
+                        }
+                    }
+                }
+                &.rema-contato{
+                    padding: 50px 0;
+                }
+            }
+        }
+    }
+}
+
+// Para colunas padrão
+@media(max-width:575px) {
+    html {
+        body {
+            header {
+                nav.navbar {
+                    .navbar-brand {
+                        width: 50%;
+
+                        img {
+                            object-fit: contain;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+
+            section {
+                &.slides {
+                    height: auto;
+                    #slide-bootstrap {
+                        .carousel-item {
+                            img {
+                                height: auto;
+                            }
+
+                            .carousel-caption {
+                                right: auto;
+                                left: 0;
+                                top: 5%;
+                                color: $corPrimaria;
+
+                                h2 {
+                                    font-size: 1.5em;
+                                    margin-bottom: 0;
+                                    color: $corPrimaria;
+
+                                    span {
+                                        color: $corSecundaria;
+                                        font-family: $titulo;
+                                    }
+                                }
+
+                                p {
+                                    margin: 10px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                // Header páginas interna
+                &.header-padrao{
+                    height: 150px;
+                }
+                // Blog
+                &.blog-rema {
+                    padding-top: 50px;
+                    padding-bottom: 30px;
+                }
+                // Index - presença mundial
+                &.rema-presenca-mundial{
+                    padding: 50px 0;
+                }
+                // Index - empresa
+                &.rema-perfil{
+                    iframe{
+                        height:200px;
+                    }
+                    .clip1{
+                        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    }
+                }
+                // Index - Soluções
+                &.rema-solucoes{
+                    .clip2{
+                        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    }
+                }
+                // Contato
+                &.rema-contato {
+                    .info-contato {
+                        width: 100%;
+                        z-index: 5;
+                        margin-left: 0px;
+                    }
+
+                    .form-contato {
+
+                        padding-left: 15px;
+                        z-index: 0;
+                        margin-left: 0px;
+                    }
+                }
+            }
+
+            footer {
+                #menu-menu-rodape.menu {
+                    padding-left: 15px;
+
+                    li {
+                        a.nav-link {
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                .p-90 {
+                    padding: 50px 0;
+                }
+
+                .col-md-6:nth-of-type(2) {
+                    margin-top: 50px;
+                }
+
+                .footer-copyright {
+                    h6 {
+                        font-size: .43em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 400px){
+    html{
+        body{
+            section{
+                &.header-padrao{
+                    height: 120px;
+                    .container{
+                        h1{
+                            margin-top: 10px;
+                            font-size: 1.3em;
+                            line-height: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

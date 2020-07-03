@@ -1,0 +1,36 @@
+.btnPrimario {
+    color: $corBranca;
+    transition: all .5s ease-in-out;
+    background: transparent;
+    padding: 15px 0px;
+    width: 250px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid $corBranca;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $corSecundaria;
+        background: $corBranca;
+        text-decoration: none;
+    }
+}
+
+.btnSecundario {
+    background-color: $corSecundaria;
+    border: 1px solid $corSecundaria;
+    border-radius: 5px;
+    color: $corBranca;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 15px 0px;
+    width: 250px;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $corSecundaria !important;
+        background-color: $corBranca !important;
+        border-color: $corSecundaria !important;
+        box-shadow: none !important;
+    }
+}
